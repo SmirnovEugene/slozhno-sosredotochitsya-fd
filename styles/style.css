@@ -1,5 +1,107 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  font-size: 18px;
+  padding-inline: var(--page-padding-inline);
+}
+
+.header {
+  min-block-size: 100vh; /* определяет минимальный размер элемента по блочной оси */
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+
+.header__theme-menu {
+  font-size: 18px;
+  justify-self: end;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-block-start: var(--header-margin-block);
+}
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__theme-menu-button {
+  inline-size: 3.88em;
+  block-size: 1.44em;
+  background: transparent;
+  text-transform: lowercase;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-size: var(--font-size);
+  font-weight: bold;
+  line-height: 83%;
+  color: var(--primary-color);
+  text-shadow: 4px 4px var(--accent-color);
+}
+
+.header__text {
+  margin-block-end: var(--header-margin-block);
+}
+
+.decor-rec {
+  color: var(--accent-color);
+  position: absolute;
+  visibility: var(--rec-visibility);
+  inset-block-start: var(--decor-position);
+  inset-inline-end: 28px;
+  line-height: 1.4;
+  text-align: center;
+}
+.decor-rec::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-inline-start: 10px;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+.decor-zone {
+  position: relative;
+}
+.decor-zone::after,
+.decor-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border: 1px solid var(--accent-color);
+}
+
+.decor-zone::after {
+  inset-block-start: var(--decor-position);
+  inset-inline-end: 0;
+  border-block-end: none;
+  border-inline-start: none;
+}
+.decor-zone::before {
+  inset-block-end: var(--decor-position);
+  inset-inline-start: 0;
+  border-block-start: none;
+  border-inline-end: none;
+}
+
+.decor-title {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  block-size: min-content;
+  font-weight: bold;
 }
