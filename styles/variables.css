@@ -11,4 +11,6 @@
   --decor-position: 10px;
   --header-margin-block:clamp(1.5rem, -5.5969rem + 30.2799vw, 8.9375rem);
   --rec-visibility:visible; 
+  --column-count: 1;
+  --item-span: 1;
 }
