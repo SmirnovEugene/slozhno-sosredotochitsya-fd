@@ -2,6 +2,7 @@
   --primary-color: #db00ff;
   --secondary-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-opacity: #ff007040;
   --text-color: #f1b2ce;
   --bg-image: url("/images/cover-image.png");
   --bg-color: #000028;
@@ -9,8 +10,8 @@
   --font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-padding-inline: 10px;
   --decor-position: 10px;
-  --header-margin-block:clamp(1.5rem, -5.5969rem + 30.2799vw, 8.9375rem);
-  --rec-visibility:visible; 
+  --header-margin-block: clamp(1.5rem, -5.5969rem + 30.2799vw, 8.625rem);
+  --rec-visibility: visible;
   --column-count: 1;
   --item-span: 1;
 }
