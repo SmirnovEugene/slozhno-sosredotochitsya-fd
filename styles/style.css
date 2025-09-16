@@ -1,5 +1,4 @@
 .page {
-  padding-inline: var(--page-padding-inline, 10px);
   color: var(--text-color, #f1b2ce);
   font-family: var(--font-family, monospace);
   font-size: 18px;
@@ -9,6 +8,12 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.header,
+.main,
+.footer {
+  padding-inline: var(--page-padding-inline, 10px);
 }
 
 .header {
