@@ -8,9 +8,10 @@
     --primary-color: #db00ff;
     --secondary-color: #000028;
     --accent-color: #ff0070;
+    --accent-color-header: #ff0070;
     --accent-color-opacity: #ff007040;
     --text-color: #f1b2ce;
-    --bg-image: url("/images/cover-image-dark.png");
+    --bg-image: url("./images/cover-image-dark.png");
     --bg-color: #000028;
     --rec-visibility: visible;
   }
@@ -24,9 +25,10 @@
   --primary-color: #db00ff;
   --secondary-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-header: #ff0070;
   --accent-color-opacity: #ff007040;
   --text-color: #f1b2ce;
-  --bg-image: url("/images/cover-image-dark.png");
+  --bg-image: url("./images/cover-image-dark.png");
   --bg-color: #000028;
   --rec-visibility: visible;
 }
